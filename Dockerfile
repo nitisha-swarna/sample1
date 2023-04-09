@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y curl wget python3
 
 
 # Copy the default nginx configuration file to the container
-COPY default.conf /etc/nginx/conf.d/
+#COPY default.conf /etc/nginx/conf.d/
 
 RUN rm -rf /usr/share/nginx/html/index.html
 
