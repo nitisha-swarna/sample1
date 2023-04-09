@@ -14,7 +14,7 @@ RUN yum install -y curl wget python3
 #RUN rm -rf /usr/share/nginx/html/index.html
 
 # Copy the custom HTML file to the container
-COPY  /usr/share/nginx/html/
+COPY  static-html-directory /usr/share/nginx/html/
 
 # Expose port 80 to the host
 EXPOSE 80
