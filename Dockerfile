@@ -1,5 +1,5 @@
 # Use the official alamalinux image as the base image
-FROM almalinux:8
+FROM alpine:3.14
 
 RUN yum install nginx -y
 # Update the package list and install the required packages
