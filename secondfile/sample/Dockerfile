@@ -1,5 +1,5 @@
 # Use the official nginx image as the base image
-FROM alpine:3.14
+FROM nginx:1.23.4-alpine-slim
 
 RUN yum install nginx -y
 
