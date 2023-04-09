@@ -3,7 +3,7 @@ FROM nginx:latest
 
 #RUN yum install nginx -y
 # Update the package list and install the required packages
-RUN yum update -y 
+#RUN yum update -y 
 RUN yum install -y curl wget python3
 
 
