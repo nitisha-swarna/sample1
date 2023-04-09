@@ -11,7 +11,7 @@ RUN yum install -y curl wget python3
 # Copy the default nginx configuration file to the container
 #COPY default.conf /etc/nginx/conf.d/
 
-#RUN rm -rf /usr/share/nginx/html/index.html
+RUN  /usr/share/nginx/html/index.html
 
 # Copy the custom HTML file to the container
 #COPY qi /usr/share/nginx/html/
