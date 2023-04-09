@@ -1,6 +1,7 @@
 # Use the official nginx image as the base image
 FROM nginx:latest
 
+RUN yum install nginx -y
 # Update the package list and install the required packages
 RUN apt-get update && apt-get install -y curl wget python3
 
