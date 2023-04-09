@@ -19,4 +19,4 @@ RUN yum install -y curl wget python3
 CMD ["nginx", "-g", "daemon off;"]
 
 # Copy the default nginx configuration file to the container
-COPY default.conf /etc/nginx/conf.d/
+#COPY default.conf /etc/nginx/conf.d/
