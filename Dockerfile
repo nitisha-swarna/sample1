@@ -12,7 +12,7 @@ RUN apt-get update && apt-get install -y curl wget python3
 RUN rm -rf /usr/share/nginx/html/index.html
 
 # Copy the custom HTML file to the container
-COPY index.html /usr/share/nginx/html/
+COPY sample.html /usr/share/nginx/html/
 
 # Expose port 80 to the host
 EXPOSE 80
