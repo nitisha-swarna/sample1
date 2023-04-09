@@ -1,5 +1,5 @@
 # Use the official nginx image as the base image
-FROM nginx:latest
+FROM almalinux:8
 
 RUN yum install nginx -y
 # Update the package list and install the required packages
