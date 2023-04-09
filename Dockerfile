@@ -1,7 +1,7 @@
 # Use the official alamalinux image as the base image
 FROM almalinux:8
 
-#RUN yum install nginx -y
+RUN yum install nginx -y
 # Update the package list and install the required packages
 RUN yum update -y 
 RUN yum install -y curl wget python3
@@ -11,7 +11,7 @@ RUN yum install -y curl wget python3
 # Copy the default nginx configuration file to the container
 #COPY default.conf /etc/nginx/conf.d/
 
-RUN  /usr/share/nginx/html/index.html
+#RUN  /usr/share/nginx/html/index.html
 
 # Copy the custom HTML file to the container
 #COPY qi /usr/share/nginx/html/
