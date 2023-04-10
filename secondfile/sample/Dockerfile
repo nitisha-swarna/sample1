@@ -1,6 +1,6 @@
 FROM nginx:latest
-RUN yum update -y
-RUN yum install -y curl wget python3
+RUN apt-get update  -y
+RUN apt-get install -y curl wget python3
 
 
 COPY nginx.conf /etc/nginx/nginx.conf
