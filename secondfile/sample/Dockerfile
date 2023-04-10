@@ -4,6 +4,6 @@ RUN apt-get update && apt-get install -y curl wget python3
 #COPY files/default /etc/nginx/sites-available/default
 COPY nginx.conf /etc/nginx/nginx.conf
 
-COPY files/index.html /usr/share/nginx/html/index.html
+COPY index.html /usr/share/nginx/html/index.html
 EXPOSE 80
 CMD ["/usr/sbin/nginx", "-g", "daemon off;"]
