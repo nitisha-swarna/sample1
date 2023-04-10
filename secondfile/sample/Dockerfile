@@ -1,4 +1,4 @@
-FROM nginx:alpine
+FROM nginx:1.23.4-alpine-slim
 
 
 RUN yum update -y
