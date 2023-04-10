@@ -1,17 +1,8 @@
-FROM almalinux:8
-RUN yum install nginx -y
+FROM nginx:1.23.4
 
-# Update the package list and install the required packages
-RUN yum update -y
-RUN yum install -y curl wget python3
+RUN apt-get update && apt-get install -y curl wget python3
 
+#COPY nginx.conf /etc/nginx/nginx.conf
+COPY index.html /usr/share/nginx/html/index.html
 
-
-# Copy the default nginx configuration file to the container
-#COPY default.conf /etc/nginx/conf.d/
-
-# Expose port 80 to the host
-EXPOSE 80
-
-# Start the nginx server when the container starts
 CMD ["nginx", "-g", "daemon off;"]
